@@ -1,0 +1,40 @@
+<html>
+  <body>
+    <p>Some text.</p>
+	
+    <script>
+    var c = document.body.childNodes;
+    var txt = "";
+    for (var k = 0; k < c.length; k++) {
+     txt += c[k].nodeType + " ";
+    }
+    alert(txt);
+
+//element.removeChild(oldNode) - removes a child node from an element.
+//element.appendChild(newNode) - adds a new child node to an element, as the last child node;
+//element.insertBefore(node1, node2) - inserts node1 as a child, before node2;
+//element.replaceChild(newNode, oldNode) - replaces oldNode with newNode. 	
+//element.cloneNode() - clones an element and returns the resulting node.
+//document.createElement(element) creates a new element node. 
+//document.createTextNode(text) creates a new text node.
+//Capturing propagation
+//elem1.addEventListener("click", myFunction, true); 
+
+//Bubbling propagation
+//elem2.addEventListener("click", myFunction, false);
+
+//JSON.parse() is a built-in JavaScript function that is used to convert a string into an object:
+
+var text = '{ "people" : [' + '{ "name":"John", "age":"21" },' + '{ "name":"Amy", "age":"37" },' +
+    '{ "name":"David", "age":"42" } ]}';
+
+var obj = JSON.parse(text);
+
+var a = obj.people[0].name; // John
+var b = obj.people[1].name; // Amy
+
+document.write(a + "<br />  <br/>" + b);
+    </script>
+	
+  </body>
+</html>

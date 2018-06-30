@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<button onClick="my()">Click me</button>
+<input type="button" name="fgh" value="Click me" onClick="my()">
+<p id="abc"></p>
+<script type="text/javascript">
+function my(){
+var x;
+var r=confirm("Press a button");
+if (r == true) 
+    x="You pressed ok";
+else
+    x="You pressed cancel";
+
+document.getElementById("abc").innerHTML=x;}
+</script>
+
+</body>
+</html>

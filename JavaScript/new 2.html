@@ -1,0 +1,73 @@
+<html>
+<head>
+<script type="text/javascript" >
+cam = {name:"Cam", age:20};
+alex = {name:"Alexndra Stan", age:25};
+
+function person(name,age){
+ this.name=name;
+ this.age=age;
+ this.yearOB=YOB;
+ }
+ 
+ function YOB(){
+ var numyear = 2017 - this.age;
+ return numyear;
+ }
+ 
+ var Cam= new person("Cam",20);
+var Camila= new person("Camila Cabello",22);
+
+</script>
+</head>
+<body>
+<script type="text/javascript" >
+document.write(cam.name+" is doing JS and "+alex.name+" is 20");
+document.write("<br>"+Cam.name+"'s year of birth is "+Cam.yearOB());
+</script>
+
+<script type="text/javascript" >
+var Singers = new Array("Coldplay","Taylor Swift","Akon","Camila Cabello","Shawn Mendes");
+document.write("<br>"+Singers[4]);
+document.write("<br> No. of entries in Singer's array = "+Singers.length+"<br>");
+var Rappers = new Array("PittBull","Eminem","Colby Odonis","Iggy Azalea","Dolla $ign");
+
+var Songs = Singers.concat(Rappers);
+var i=0;
+while (i<Songs.length)
+{document.write(Songs[i]+"<br>");
+i++;}
+
+Songs.pop();
+document.write(Songs[10]+"<br>");
+Rappers.push("Nicki Minaj","Kid Ink")
+
+Singers.sort();
+Rappers.reverse();
+var string1 = Singers;
+var string2 = Rappers.join("/");
+document.write(string1+"<br>");
+document.write(string2+"<br>");
+</script>
+
+<script type="text/javascript" >
+document.write("Value of Pie = "+Math.PI+"<br>");
+document.write("Euler constant = "+Math.E+"<br>");
+
+var n = prompt("Enter a no. :","");
+var ans = Math.sqrt(n);
+alert("The square root of "+n+" = "+ans);
+</script>
+
+<script type="text/javascript">
+var eye = prompt("Enter your eye color","");
+document.write("<br> Your eye color is "+eye)
+</script>
+
+<br><br>
+<a href="new 1.html">Click to go to new 1! </a>
+<br>
+<a href="new 3.html">Click to go to new 3! </a>
+
+</body>
+</html>

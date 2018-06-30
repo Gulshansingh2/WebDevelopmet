@@ -1,0 +1,122 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header>h1{
+	font: bold 40px BankGothic Lt BT;
+    text-shadow: rgba(120,130,140,.8) 4px 4px 6px;
+}
+h1{
+	font: bold 22px Tahoma;
+}
+h2{
+	font: bold 17px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+	display:block;
+}
+/*body{width: 100%;
+	text-align:center;
+}*/
+body{width: 100%;
+	 display:-webkit-box;
+	 -webkit-box-pack: center;
+}
+#wrap{
+	border:2px solid black;
+	width:1200px;
+	margin:20px auto;
+	text-align:left;
+    display:-webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow:rgba(110,110,110,.6) -10px 10px 10px;
+    /*-webkit-transform:scale(1.2,1) scale(-1,1) translate(150px,200px) rotate(45deg) skew(10deg);*/
+}
+#top_header{
+    background:-webkit-linear-gradient(45deg,silver,white);
+	padding:20px;
+	text-align:center;
+}
+#navigation{
+	background:navy;
+	color:white;
+    opacity: 0.8;
+	}
+#navigation li{
+	display:inline-block;
+	list-style:none;
+	padding:20px; padding-left:230px;
+	font:bold 18px Tahoma;
+	-webkit-transition:background 0.5s;
+}
+#navigation li:hover{
+    background: #1ec7e6; 
+}
+a:link{text-decoration:none;}
+a:visited{color:white;}	
+a:hover{background-color:none;color:white;}
+a:active{background-color:none;}
+/*#main_section{
+	float:left;
+	width:660px;
+	margin:30px;
+}	
+#side_news{
+	float:left;
+	width:220px;
+	margin:20px 0px;
+	padding:30px; 
+	background: #66CCCC;
+}
+#the_footer{
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-top:2px Solid green;
+}*/
+#main_div{
+	 display:-webkit-box;
+	-webkit-box-orient: horizontal;
+}
+#main_section{
+	-webkit-box-flex: 1;
+	margin: 20px;
+	padding: 20px;
+}	
+#side_news{
+	font-family: HP Simplified;
+	width:220px;
+	margin:35px 0px 30px 20px;
+	padding:30px; 
+	background: #66CCCC;
+    line-height:150%;
+	-webkit-box-shadow:rgb(110,110,110) 5px -5px 5px inset;
+    -webkit-transition:background 1s;
+}
+#side_news:hover{
+     background:-webkit-linear-gradient(top,#66CCCC,white);
+}
+#the_footer{
+	text-align:center;
+	padding:20px;
+	border-top:2px Solid green;
+}
+article{
+	background:-webkit-radial-gradient(center,circle,#FFFBCC 10%,white 50%); 
+	border: 1px solid red;
+	padding:20px;
+	margin-bottom:15px;
+}
+article footer{
+	text-align:right;
+}
+p{
+	margin:10px;
+   font-family:arial;line-height:170%;font-style:italic;
+    text-indent:30px;
+}
+#a{
+	text-align:center;
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" >
+
+</script>
+</head>
+<body>
+<script type="text/javascript" >
+function printTime() {
+  var d = new Date();
+  var hours = d.getHours();
+  var mins = d.getMinutes();
+  var secs = d.getSeconds();
+  document.body.innerHTML = hours+":"+mins+":"+secs;
+}
+setInterval(printTime, 1000);
+
+<!-- var arr = document.getElementsByTagName("p");
+// var e = document.getElementsByClassName("demo");
+//JavaScript provides a number of methods and properties for elements:
+//element.childNodes - returns a collection of an element's child nodes;
+//element.firstChild- returns the first child node of an element;
+//element.lastChild - returns the last child node of an element;
+//element.hasChildNodes - returns true if an element has any child nodes, otherwise false;
+//element.nextSibling - returns the next node at the same node tree level;
+//element.previousSibling - returns the previous node at the same node tree level;
+//element.parentNode - returns the parent node of an element; -->
+</script>
+
+</body>
+</html>

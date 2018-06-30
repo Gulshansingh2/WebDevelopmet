@@ -1,0 +1,24 @@
+p.cam{
+	color:silver;
+}
+p[name="mac"]{
+	color:blue;
+}
+p[name^="bret"]{
+	color:navy;
+}
+p[name$="bret"]{
+	color:green;
+}
+p[name*="cam"]{
+	color:grey;
+}
+
+h4:nth-child(odd){color:pink;}
+h4:nth-child(even){color:blue;}
+h4:nth-child(3n){color:yellow;}
+
+:not(.cam){color:brown;}
+
+p.cam+p{color:orange;}
+/*p.cam~p{color:blue;}*/

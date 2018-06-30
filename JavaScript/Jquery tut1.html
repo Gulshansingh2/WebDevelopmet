@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+	  $("#theElement").addClass('theClass class2 class3');
+        $("#theElement").css(
+        {
+          'background-color' : '#00ff00',
+          'border' : '1px solid #000000'
+        });
+		  var backgroundColor = $(".Class2").css('background-color');
+		  document.getElementById("Element").innerHTML = backgroundColor;
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="theElement">
+      CSS of this element will gonna change
+    </div>
+	    <div id="Element">
+      CSS of this element will gonna change
+    </div>
+  </body>
+</html>

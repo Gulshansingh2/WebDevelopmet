@@ -1,0 +1,55 @@
+<html>
+  <head>
+   <script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js">
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        var text = $("#theElement").text();
+        alert(text);
+        $("#theElement").text("This is new text");
+
+		var html = $('#theElement').html();
+		alert(html);
+		$('#theElement').html('New text <br/> for element.<br><br>');
+		
+		$("#b1").click(function(){
+           value = $("input").val()
+          alert(value);
+        });
+		
+		$("#b2").click(function(){
+           $("#a").attr({width:100, height:100});
+        });
+		
+		$("#b3").click(function(){
+          $("#Element").append("<br>This is new text");
+        });
+		
+		$("#b3").click(function(){
+          $('#theElement').remove();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="theElement">
+      This is the previous text
+    </div>
+	<input type="text" placeholder="Enter some value">
+    <br>
+    <button id = "b1">Click after entering the value</button>
+	<br>
+	<img src="Assignment/LUCID.JPG") id="a" width="50" height="50">
+    <br>
+    <button id="b2">Change the width of the image</button>
+	<br>
+	<div id="Element">
+      This is the previous text
+    </div>
+    <button id="b3">Click here!</button>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#btn").click(function(){
+          $("#theDiv").show('slow');
+        });
+		
+		$("#btn1").click(function(){
+          $("#theDiv").hide('slow');
+        });
+
+      });
+    </script>
+	
+	<script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#btn2").click(function(){
+          $("#Div").toggle('slow');
+        });
+
+      });
+    </script>
+	
+	<script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#btn3").click(function(){
+          $("#xDiv").slideDown('slow');
+        });
+		 $("#btn4").click(function(){
+          $("#xDiv").slideUp('slow');
+        });
+      });
+    </script>
+	
+	<script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#btn5").click(function(){
+          $("#xDiv").fadeIn('slow');
+        });
+		 $("#btn6").click(function(){
+          $("#xDiv").fadeOut('fast');
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <input type="button" id="btn" value="click me! (show)">
+	 <input type="button" id="btn1" value="click me! (hide)">
+    <div id="theDiv" style="display :none">
+      This was hidden
+    </div>
+	
+	<input type="button" id="btn2" value="click me again and again!">
+    <div id="Div" style="display :none">
+      This is done by toggle function.
+    </div>
+	
+	<input type="button" id="btn3" value="SlideDown!">
+	<input type="button" id="btn4" value="Slideup!">
+	<input type="button" id="btn5" value="FadeIn!">
+	<input type="button" id="btn6" value="FadeOut!">
+
+    <div id="xDiv" style="display:none" >
+      This was hidden.<br/>
+      This div is slided down or faded in<br/>
+      using differnt<br/>
+      fucntions.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+  <head>
+   <script type="text/javascript" src="jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#theDiv").click(function(){
+          alert("div clicked");
+        });
+	  });
+    </script>
+	
+	<script type="text/javascript">
+      $(document).ready(function(){
+     	var c = $("#Divc");
+		c.dblclick(function(){
+			alert("divc clicked");
+		});
+      });
+    </script>
+	
+	 <script type="text/javascript">
+      $(document).ready(function(){
+        $("input").change(function(){
+          alert("The text has been changed.");
+        });
+      });
+	</script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#Diva').mouseenter(function() {
+			  alert("Div entered");
+			});
+		    $('#Diva').mouseleave(function() {
+			  alert("Div left");
+			});
+
+		});
+	</script>
+	
+    <script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#Divb').hover(
+			function() {
+				alert("Divb entered");
+			},
+			function() {
+				alert("Divb left");
+			});
+		});
+	</script>
+	
+	<script type="text/javascript">
+	 $(document).ready(function() {
+		$('#Divx').toggle(
+		function() {
+			alert("Div clicked once");
+		},
+		function() {
+			alert("Div clicked twice");
+		}
+		);
+
+	  });
+	</script>
+	
+	<script>
+      x=0;
+      $(document).ready(function(){
+        $("textarea").scroll(function(){
+          $("span").text(x+=1);
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <div id="theDiv">
+      Click this div!
+    </div>
+	
+	<div id="Divc">
+		   Click this div!
+	</div>
+	<br>
+	<input type="text">
+    <p>
+      Enter something in the input box and then press enter. 
+      the field.
+    </p>
+	
+	<div id="Diva">Enter this div!</div>
+	<br><br>
+	<div id="Divb">The div...</div>
+ 	<br><br>
+	<div id="Divx">The div..........................</div> 
+	<br><br>
+	<textarea rows="10" cols="50" id="txtscroll">
+      jQuery is a JavaScript based library which makes much easier for your web
+      applications using java script. You have to write lot of code to accomplish 
+      tasks in java script but jQuery enables you to write much less code. So the 
+      jQuery is light weight, "write less, do more", JavaScript library 
+      specialized for changing the web page documents on the fly. It makes much 
+      easier to use JavaScript on your web site. jQuery makes quite simple, like
+      HTML document traversal and manipulation, handling events such as
+      clicking on links, mouse events etc, animations for applications etc.
+    </textarea>
+    <p>Scrolled <span>0</span> times.</p>
+  </body>
+</html>

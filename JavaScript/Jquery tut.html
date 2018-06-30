@@ -1,0 +1,133 @@
+<html>
+  <head>
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script-->
+	
+	<script>
+     $(document).ready(function(){
+      $('a').css('background-color', '#00ff00');
+     });
+    </script>
+  </head>
+
+  <body>
+   <a href="http://google.com" target="_blank">click here</a>
+   
+   <script type="text/javascript">
+	  $(document).ready(function() {
+		$('#theId').css('background-color', '#0000ff');
+	  });
+	</script>
+	<div id="theId">text</div>
+	<br>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.theId').css('background-color', '#ff0000');
+		});
+	</script>
+	<div class="theId">text</div>
+	<br>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#Id[height="200"]').css('background-color', '#ffff00');
+		});
+	</script>
+	<div id="Id" height="200">text</div>
+	<br>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$(".contentDiv").each( function(index, element) {
+				if(index == 0)
+					$(element).css("background-color", "#00ffff");
+				if(index == 1)
+					$(element).css("background-color", "#ffaaaa");
+				if(index == 2)
+					$(element).css("background-color", "#ccbbbb");
+				});
+			});
+	 </script>
+	<div class="contentDiv"> Div </div>
+	<div class="contentDiv"> Div </div>
+	<div class="contentDiv"> Div </div>
+	<br>
+	<script type="text/javascript">
+			$(document).ready(function(){
+				$(".contentDiv1").first().css("background-color", "#ffaaff");
+				$(".contentDiv1").last().css("background-color", "#ffffaa");
+				var firstDiv = $(".contentDiv1").first()
+				firstDiv.next().css("background-color", "#ffaaaa");
+				var lastDiv = $(".contentDiv1").last()
+				lastDiv.prev().css("background-color", "#aaffff");
+			});
+	</script>	
+	<div class="contentDiv1"> Div </div>
+	<div class="contentDiv1"> Div </div>
+	<div class="contentDiv1"> Div </div>
+	<div class="contentDiv1"> Div </div>
+	<br>
+	<li><div id="mydiv">This is my div</div></li>
+	<script>
+      $(document).ready(function(){
+        $('#mydiv').closest('li').css('background-color' , 'red');
+      });
+    </script>
+	  <li><div id="mydiv">This is my div</div></li>
+	<ul>
+      <li>first element</li>
+      <li>Second element</li>
+	  <li><div id="mydiv">This is my div</div></li>
+    </ul>
+	<br>
+	<script>
+      $(document).ready(function(){
+        $('button').click(function(){
+          $(this).parent().css("background-color", "#ffaaaa");
+        });
+      });
+	</script>  
+	<div >
+      This is the parent div<br/>
+      The button below is a child of the div, so when the button is clicked it
+      changes the color of its parent using the parent() function.<br/>
+      <button>Click here!</button>
+    </div>
+	<br>
+	<script>
+      $(document).ready(function(){
+		var children = $("#div1").children();
+		children.each(function(index, element) {
+				if(index == 1)
+					$(element).css("background-color", "#ffaaaa");
+				if(index == 2)
+					$(element).css("background-color", "#aaaaff");
+		});
+      });
+	</script>  	
+	<div id="div1">
+      This is the parent div<br/>
+      <p>U r are here!</p>
+	  <h4>YO Whats'up</h4>
+    </div>
+	<script>
+      $(document).ready(function(){
+		var siblings = $("#z").siblings();
+		siblings.each(function(index, element) {
+				if(index == 1)
+					$(element).css("background-color", "#ffaaaa");
+				if(index == 3)
+					$(element).css("background-color", "#aaaaff");
+		});
+      });
+	</script> 
+	<br> 	
+	<div>
+      This is the parent div<br/>
+      <p >U r are here!</p>
+	  <h4>YO Whats'up</h4>
+	  <p>a paragraph!</p>
+	  <h4 id="z">heading</h4>
+    </div>
+		
+		
+  </body>
+</html>
